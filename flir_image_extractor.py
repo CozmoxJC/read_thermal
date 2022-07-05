@@ -211,10 +211,10 @@ class FlirImageExtractor:
         rgb_np = self.get_rgb_np()
         thermal_np = self.get_thermal_np()
 
-        plt.subplot(1, 2, 1)
-        plt.imshow(thermal_np, cmap='hot')
-        plt.subplot(1, 2, 2)
-        plt.imshow(rgb_np)
+        #plt.subplot(1, 2, 1)
+        plt.imshow(thermal_np) #, cmap='hot'
+        #plt.subplot(1, 2, 2)
+        #plt.imshow(rgb_np)
         plt.show()
 
     def save_images(self):
